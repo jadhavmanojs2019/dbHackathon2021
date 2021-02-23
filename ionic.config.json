@@ -1,0 +1,7 @@
+{
+  "name": "dbhackathon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
