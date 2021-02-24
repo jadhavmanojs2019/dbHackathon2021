@@ -10,8 +10,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class Tab1Page implements OnInit {
 
-  constructor(public http: HttpClient) {
-  }
+  constructor(public http: HttpClient) {}
 
 
 msaapDisplayTitle = true;
