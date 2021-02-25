@@ -11,7 +11,7 @@ export class Tab2Page {
     {name: 'tap'},
     {name: 'doubleTap'},
     {name: 'press'},
-    // {name: 'swipe'},
+    {name: 'swipe'}
   ];
   constructor() {}
 
