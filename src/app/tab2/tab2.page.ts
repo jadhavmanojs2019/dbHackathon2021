@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Gesture} from '../social-gestures.directive';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
@@ -13,7 +14,7 @@ export class Tab2Page {
     {name: 'press'},
     {name: 'swipe'}
   ];
-  constructor() {}
+  constructor(private router: Router) {}
 
   onTap(event: any){
     console.log(event);
@@ -31,6 +32,14 @@ export class Tab2Page {
   onSwipe(event: any){
     console.log(event);
     // console.log('Swipe');
+    if(event.dirX=='left' && event.swipeType=='moveend'){
+      console.log('left');
+      this.router.navigateByUrl('tabs/tab1');
+    }
+    else if(event.dirX=='right' && event.swipeType=='moveend'){
+      console.log('right')
+      this.router.navigateByUrl('tabs/tab3');
+    }
   }
 
 }
