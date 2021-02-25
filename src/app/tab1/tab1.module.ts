@@ -20,4 +20,15 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
   ],
   declarations: [Tab1Page]
 })
-export class Tab1PageModule {}
+export class Tab1PageModule {
+  public showloader: boolean = false;      
+
+  public setTimer(){
+
+    // set showloader to true to show loading div on view
+    this.showloader   = true;
+
+    
+  }
+
+}
