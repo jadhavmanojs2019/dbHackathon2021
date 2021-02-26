@@ -1,8 +1,12 @@
-<!--<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>-->
+<ion-content fullscreen *ngIf="showSplash">
+  <div style="background: #2c66cc;height:100% ">
+    <div class="lds-circle" style="margin-left: 39%;margin-top: 50%;">
+      <div></div>
+    </div>
+    </div>
+</ion-content>
 
-<ion-header>
+<ion-header *ngIf="!showSplash">
   <ion-toolbar color="primary">
     <ion-title>Vector Bank</ion-title>
     <ion-buttons slot="start">
@@ -19,7 +23,7 @@
 
 
 
-    <ion-card  (click)="onPress($event)">
+    <ion-card  (click)="onPress($event)" *ngIf="!showSplash">
       <img src="./assets/bank.jpg" />
       <ion-card-header>
         <ion-card-subtitle>Hello, Dear Customer</ion-card-subtitle>
@@ -39,13 +43,13 @@
 
 
 <!-- fab placed to the (vertical) center and end -->
-<ion-fab vertical="center" horizontal="end" slot="fixed">
+<ion-fab vertical="center" horizontal="end" slot="fixed" *ngIf="!showSplash">
   <ion-fab-button color="danger">
     <ion-icon name="play"></ion-icon>
   </ion-fab-button>
 </ion-fab>
 
 
-<ion-app *ngIf="showRoute">
+<ion-app *ngIf="showRoute && !showSplash">
   <ion-router-outlet></ion-router-outlet>
 </ion-app>
