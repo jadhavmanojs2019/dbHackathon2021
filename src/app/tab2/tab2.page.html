@@ -1,3 +1,7 @@
+
+
+
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -6,33 +10,45 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Offers</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>Available Offers</ion-title>
+  </ion-toolbar>
+</ion-header>
 
+<ion-content [fullscreen]="true" style="margin-top: 25px;" socialGestures [gestureOpts]="gestureOpts"
+(tap)="onTap($event)"
+(doubleTap)="onDoubleTap($event)"
+(press)="onPress($event)"
+(swipe)="onSwipe($event)">
+  <ion-list>
+    <ion-item>
+      <p style="font-weight: bold; width: 20%;">Offer 1</p>
+      <p style="width: 80%">Get additional 10% off* on a minimum transaction of Rs. 7000 at any PAN India GAP exclusive stores with Deutsche Bank Visa Debit Card. Use promo code VISAGAP at checkout to avail the offer.</p>
+    </ion-item>
+    <ion-item>
+      <p style="font-weight: bold; width: 20%;">Offer 2</p>
+      <p style="width: 80%">Get 25% off* on Crocs website with Deutsche Bank Visa Debit Card. Simply use the promo code VCROCS during checkout at shopcrocs.in to avail the discount.
+      </p>
+    </ion-item>
+    <ion-item>
+      <p style="font-weight: bold; width: 20%;">Offer 3</p>
+      <p style="width: 80%">Shop from a wide range of products on Lenskart stores or website and get Rs. 300 off* on minimum spends of Rs. 1,899 and above using Deutsche Bank Visa Debit Card to avail the offer.</p>
+    </ion-item>
+    <ion-item>
+      <p style="font-weight: bold; width: 20%;">Offer 4</p> 
+      <p style="width: 80%">Get upto Rs. 10,000 off* on Domestic and International Hotel bookings at Goibibo website or app using your Deutsche Bank Visa Debit Card. Simply use the promo code GOVISA to avail the offer.</p>
+    </ion-item>
+    <ion-item>
+      <p style="font-weight: bold; width: 20%;">Offer 5</p> 
+      <p style="width: 80%">Get exciting discounts* at OYO using your Deutsche Bank Visa Debit Card. Simply apply the relevant promo codes to avail the discount.</p>
+    </ion-item>
+    <ion-item>
+      <p style="font-weight: bold; width: 20%;">Offer 6</p> 
+      <p style="width: 80%">Get up to Rs. 10,000 off* per transaction on Domestic and International hotels on MakeMyTrip website and mobile app with Deutsche Bank Visa Debit Card. Apply the promo code MMTVISA to avail the discount.</p>
+    </ion-item>
+  </ion-list>
 
-  <ion-card socialGestures [gestureOpts]="gestureOpts"
-          (tap)="onTap($event)"
-          (doubleTap)="onDoubleTap($event)"
-          (press)="onPress($event)"
-          (swipe)="onSwipe($event)">
-          <ion-card-header>
-            <ion-card-subtitle></ion-card-subtitle>
-            <ion-card-title></ion-card-title>
-          </ion-card-header>
-
-          <ion-card-content>
-            <p>Get additional 10% off* on a minimum transaction of Rs. 7000 at any PAN India GAP exclusive stores with Deutsche Bank Visa Debit Card. Use promo code VISAGAP at checkout to avail the offer.</p>
-            <p>Get 25% off* on Crocs website with Deutsche Bank Visa Debit Card. Simply use the promo code VCROCS during checkout at shopcrocs.in to avail the discount.</p>
-            <p>Shop from a wide range of products on Lenskart stores or website and get Rs. 300 off* on minimum spends of Rs. 1,899 and above using Deutsche Bank Visa Debit Card to avail the offer.</p>
-            <p>Get upto Rs. 10,000 off* on Domestic and International Hotel bookings at Goibibo website or app using your Deutsche Bank Visa Debit Card. Simply use the promo code GOVISA to avail the offer.</p>
-            <p>Get exciting discounts* at OYO using your Deutsche Bank Visa Debit Card. Simply apply the relevant promo codes to avail the discount.</p>
-            <p>Get up to Rs. 10,000 off* per transaction on Domestic and International hotels on MakeMyTrip website and mobile app with Deutsche Bank Visa Debit Card. Apply the promo code MMTVISA to avail the discount.</p>
-          </ion-card-content>
-        </ion-card>
 
 </ion-content>
 
