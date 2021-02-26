@@ -29,7 +29,7 @@ export class AppComponent {
 msaapPlaylist2: Track[] = [
   {
     title: 'Login Instrunctions',
-    link: 'http://35.224.8.90/googlespeech/texttospeech?text=Please%20press%20anywhere%20on%20the%20screen%20to%20login%20Face%20Id.%20App%20will%20scan%20your%20face%20to%20verify%20your%20authentication',
+    link: 'http://34.71.103.202/googlespeech/texttospeech?text=Please%20press%20anywhere%20on%20the%20screen%20to%20login%20Face%20Id.%20App%20will%20scan%20your%20face%20to%20verify%20your%20authentication',
     artist: 'Audio One Artist'
   }
 
