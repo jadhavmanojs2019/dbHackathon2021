@@ -56,6 +56,14 @@ msaapPlaylist2: Track[] = [
     setTimeout(this.onPress, 3000);
     console.log("Here end video");
   }
+  showSplash = true;
+
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.showSplash = false;
+    }, 1000);
+  }
 
   onPress(event: any){
     this.showRoute = true;
@@ -66,6 +74,8 @@ msaapPlaylist2: Track[] = [
     console.log(event);
 
   }
+
+
 
 
 }
