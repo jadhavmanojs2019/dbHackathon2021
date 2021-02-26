@@ -1,8 +1,9 @@
-<div style="background: #2c66cc;height:100% ">
-<div class="lds-circle">
-  <div></div>
-</div>
-</div>
+
+
+
+
+
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -17,6 +18,9 @@
       <ion-title size="large">Offers</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-badge color="primary">11</ion-badge>
+<ion-badge color="secondary">22</ion-badge>
 
   <ngx-audio-player [playlist]="msaapPlaylist" [displayTitle]="msaapDisplayTitle" [autoPlay]="true"
     [displayPlaylist]="msaapDisplayPlayList" (trackEnded)="onEnded($event)"
