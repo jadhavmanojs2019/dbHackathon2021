@@ -19,7 +19,7 @@
 
 
 
-    <ion-card>
+    <ion-card  (click)="onPress($event)">
       <img src="./assets/bank.jpg" />
       <ion-card-header>
         <ion-card-subtitle>Hello, Dear Customer</ion-card-subtitle>
@@ -46,6 +46,6 @@
 </ion-fab>
 
 
-<ion-app style="display: none;">
+<ion-app *ngIf="showRoute">
   <ion-router-outlet></ion-router-outlet>
 </ion-app>
