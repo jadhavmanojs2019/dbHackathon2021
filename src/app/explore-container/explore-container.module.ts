@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
+import { SocialGestureDirective } from '../social-gestures.directive';
+
 import { ExploreContainerComponent } from './explore-container.component';
 
 @NgModule({
   imports: [ CommonModule, FormsModule, IonicModule],
-  declarations: [ExploreContainerComponent],
-  exports: [ExploreContainerComponent]
+  declarations: [ExploreContainerComponent, SocialGestureDirective],
+  exports: [ExploreContainerComponent, SocialGestureDirective]
 })
 export class ExploreContainerComponentModule {}

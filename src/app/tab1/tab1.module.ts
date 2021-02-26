@@ -7,7 +7,7 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { NgxAudioPlayerModule } from 'ngx-audio-player'
 import { Tab1PageRoutingModule } from './tab1-routing.module';
-import { SocialGestureDirective } from '../social-gestures.directive';
+
 @NgModule({
   imports: [
     IonicModule,
@@ -18,7 +18,7 @@ import { SocialGestureDirective } from '../social-gestures.directive';
     NgxAudioPlayerModule,
     HttpClientModule
   ],
-  declarations: [Tab1Page,SocialGestureDirective]
+  declarations: [Tab1Page]
 })
 export class Tab1PageModule {
   public showloader: boolean = false;
