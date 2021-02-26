@@ -7,7 +7,7 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { NgxAudioPlayerModule } from 'ngx-audio-player'
 import { Tab1PageRoutingModule } from './tab1-routing.module';
-
+import { SocialGestureDirective } from '../social-gestures.directive';
 @NgModule({
   imports: [
     IonicModule,
@@ -18,17 +18,17 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     NgxAudioPlayerModule,
     HttpClientModule
   ],
-  declarations: [Tab1Page]
+  declarations: [Tab1Page,SocialGestureDirective]
 })
 export class Tab1PageModule {
-  public showloader: boolean = false;      
+  public showloader: boolean = false;
 
   public setTimer(){
 
     // set showloader to true to show loading div on view
     this.showloader   = true;
 
-    
+
   }
 
 }

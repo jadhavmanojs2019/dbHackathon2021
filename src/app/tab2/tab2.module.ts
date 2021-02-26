@@ -7,14 +7,15 @@ import { Tab2Page } from './tab2.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { SocialGestureDirective } from '../social-gestures.directive';
 import { Tab2PageRoutingModule } from './tab2-routing.module';
-
+import { NgxAudioPlayerModule } from 'ngx-audio-player'
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab2PageRoutingModule
+    Tab2PageRoutingModule,
+    NgxAudioPlayerModule
   ],
   declarations: [Tab2Page,SocialGestureDirective]
 })

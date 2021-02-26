@@ -9,15 +9,19 @@
     <ion-title>Account</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content fullscreen>
+<ion-content fullscreen  socialGestures [gestureOpts]="gestureOpts"
+(tap)="onTap($event)"
+(doubleTap)="onDoubleTap($event)"
+(press)="onPress($event)"
+(swipe)="onSwipe($event)">
   <ion-list>
     <ion-item>
       <ion-label>00011405467</ion-label>
-      <ion-badge slot="end">22,10044.00</ion-badge>
+      <ion-badge slot="end">22,000.00</ion-badge>
     </ion-item>
     <ion-item>
       <ion-label>00011405468</ion-label>
-      <ion-badge slot="end">52,10044.00</ion-badge>
+      <ion-badge slot="end">50,000.00</ion-badge>
     </ion-item>
   </ion-list>
   <ion-header translucent>
@@ -41,6 +45,11 @@
     </ion-item>
   </ion-list>
 </ion-content>
+
+<ngx-audio-player [playlist]="msaapPlaylist" [displayTitle]="msaapDisplayTitle" [autoPlay]="true"
+    [displayPlaylist]="msaapDisplayPlayList" [displayVolumeControls]="msaapDisplayVolumeControls" [displayRepeatControls]="msaapDisplayRepeatControls"
+        [disablePositionSlider]="msaapDisablePositionSlider" [displayArtist]="msaapDisplayArtist"
+        [displayDuration]="msaapDisplayDuration" [expanded]="true"></ngx-audio-player>
 
 
 
